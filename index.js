@@ -20,5 +20,5 @@ function EnemyAttackEvent() {
 
 function PlayerAttackEvent() {
   EnemyHealth = EnemyHealth - Attack
-  EnemyHealthText = EnemyHeath
+  EnemyHealthText = EnemyHealth
 }
