@@ -1,38 +1,219 @@
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: black;
-  color: white;
-  font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  input[type="text"] {
+    font-size: 24px;
+    padding: 8px;
+    margin: 16px;
+    border: 2px solid white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.3);
+    background-color: black;
+    color: white;
+    width: 300px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    margin-top: 0;
+    font-size: 36px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  p {
+    font-size: 24px;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  @font-face {
+    font-family: reemkufi;
+    src: url(reemkufi.ttf);
+  }
+
+body {
+    background-color: rgb(73, 73, 73);
+    font-family: reemkufi;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-input[type="text"] {
-  font-size: 24px;
-  padding: 8px;
-  margin: 16px;
-  border: 2px solid white;
-  border-radius: 4px;
-  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.3);
-  background-color: black;
-  color: white;
-  width: 300px;
-  text-align: center;
-  font-family: sans-serif;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 36px;
-  text-align: center;
-  font-family: sans-serif;
+a {
+    color: ghostwhite;
 }
 
 p {
-  font-size: 24px;
-  text-align: center;
-  font-family: sans-serif;
+    color: ghostwhite;
+}
+
+.rotateandinvert {
+    border-radius: 15px;
+    border-color: darkslategray;
+    background-color: ghostwhite;
+    width: 250px;
+    height: 100px;
+    font-size: 25px;
+    font-family: reemkufi;
+    transition: 0.3s;
+    color: black;
+}
+
+.rotateandinvert:hover {
+    border-radius: 15px;
+    width: 500px;
+    height: 200px;
+    font-size: 60px;
+    filter: invert(1);
+    font-family: reemkufi;
+    transform: rotateZ(45deg);
+}
+
+.flipyaxis {
+    border-radius: 15px;
+    border-color: darkslategray;
+    background-color: ghostwhite;
+    width: 250px;
+    height: 100px;
+    font-size: 25px;
+    font-family: reemkufi;
+    transition: 1s;
+    color: black;
+}
+
+.flipyaxis:hover {
+    border-radius: 15px;
+    border-color: darkslategray;
+    background-color: blue;
+    width: 250px;
+    height: 100px;
+    font-size: 25px;
+    font-family: reemkufi;
+    transition: 1s;
+    transform: rotateX(180deg);
+    color: black;
+}
+
+.flipxaxis {
+    border-radius: 15px;
+    border-color: darkslategray;
+    background-color: ghostwhite;
+    width: 250px;
+    height: 100px;
+    font-size: 25px;
+    font-family: reemkufi;
+    transition: 1s;
+    color: black;
+}
+
+.flipxaxis:hover {
+    border-radius: 15px;
+    border-color: darkslategray;
+    background-color: red;
+    width: 250px;
+    height: 100px;
+    font-size: 25px;
+    font-family: reemkufi;
+    transition: 1s;
+    transform: rotateY(180deg);
+    color: black;
+}
+
+.backwards {
+        -moz-transform: scale(-1, 1);
+-webkit-transform: scale(-1, 1);
+-o-transform: scale(-1, 1);
+-ms-transform: scale(-1, 1);
+transform: scale(-1, 1);
+      }
+
+.standardplus {
+    border-radius: 15px;
+    border-color: darkslategray;
+    background-color: ghostwhite;
+    width: 250px;
+    height: 100px;
+    font-size: 25px;
+    font-family: reemkufi;
+    transition: 0.3s;
+    color: black;
+}
+
+.standardplus:hover {
+    border-radius: 15px;
+    border-color: darkslategray;
+    background-color: ghostwhite;
+    width: 350px;
+    height: 200px;
+    font-size: 50px;
+    font-family: reemkufi;
+    transition: 0.3s;
+    color: black;
+}
+
+.standard {
+    width: 250px;
+    height: 100px;
+    font-size: 25px;
+    font-family: reemkufi;
+}
+
+.upsidedown {
+    border-radius: 15px;
+    border-color: darkslategray;
+    background-color: ghostwhite;
+    width: 250px;
+    height: 100px;
+    font-size: 25px;
+    font-family: reemkufi;
+    transition: 0.3s;
+    color: black;
+}
+
+.upsidedown:hover {
+    border-radius: 15px;
+    border-color: darkslategray;
+    background-color: yellow;
+    width: 350px;
+    height: 200px;
+    font-size: 50px;
+    font-family: reemkufi;
+    transition: 0.3s;
+    color: black;
+    transform: rotateZ(180deg);
+}
+
+.thick {
+    border-radius: 15px;
+    border-width: 10px;
+    border-color: darkslategray;
+    background-color: ghostwhite;
+    width: 350px;
+    height: 200px;
+    font-size: 50px;
+    font-family: reemkufi;
+    transition: 0.3s;
+    color: black;
+}
+
+.thick:hover {
+    border-radius: 15px;
+    border-width: 10px;
+    border-color: darkslategray;
+    background-color: ghostwhite;
+    width: 350px;
+    height: 200px;
+    font-size: 50px;
+    font-family: reemkufi;
+    transition: 0.3s;
+    color: black;
 }
