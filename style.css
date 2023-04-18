@@ -43,7 +43,7 @@ body {
   }
 
 body {
-    background-color: rgb(73, 73, 73);
+    background-color: black;
     font-family: reemkufi;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -56,26 +56,22 @@ p {
     color: ghostwhite;
 }
 
-.rotateandinvert {
+.average_button {
     border-radius: 15px;
-    border-color: darkslategray;
-    background-color: ghostwhite;
+    border-color: ghostwhite;
+    background-color: black;
     width: 250px;
     height: 100px;
     font-size: 25px;
     font-family: reemkufi;
     transition: 0.3s;
-    color: black;
+    color: white;
 }
 
-.rotateandinvert:hover {
+.average_button:hover {
     border-radius: 15px;
-    width: 500px;
-    height: 200px;
-    font-size: 60px;
-    filter: invert(1);
+    font-size: 35px;
     font-family: reemkufi;
-    transform: rotateZ(45deg);
 }
 
 .flipyaxis {
