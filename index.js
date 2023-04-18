@@ -13,12 +13,12 @@ PlayerDefence = 10
 
 
 
-function EnemyAttack() {
+function EnemyAttackEvent() {
   PlayerHealth -= EnemyAttack
   PlayerHpText -= PlayerHealth
 }
 
-function PlayerAttack() {
+function PlayerAttackEvent() {
   EnemyHealth = EnemyHealth - Attack
   EnemyHealthText = EnemyHeath
 }
