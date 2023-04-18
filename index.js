@@ -3,9 +3,9 @@ EnemyHealth = document.getElementById("EnemyHealth")
 PlayerHpText = document.getElementById("player_health")
 
 
-EHealth = 100
-EDefence = 5
-EAttack = 5
+EnemyHealth = 100
+EnemyDefence = 5
+EnemyAttack = 5
 
 PlayerAttack = 10
 PlayerHealth = 100
@@ -14,11 +14,11 @@ PlayerDefence = 10
 
 
 function EnemyAttack() {
-  PlayerHealth -= EAttack
+  PlayerHealth -= EnemyAttack
   PlayerHpText -= PlayerHealth
 }
 
 function PlayerAttack() {
-  EHealth = EnemyHealth - Attack
+  EnemyHealth = EnemyHealth - Attack
   PlayerHpText.InnerText = EnemyHeath
 }
