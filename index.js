@@ -1,6 +1,6 @@
 
-var EnemyHealthText = document.getElementById("EnemyHealth").innerHTML
-var PlayerHpText = document.getElementById("player_health").innerHTML
+let EnemyHealthText = document.getElementById("EnemyHealth")
+let PlayerHpText = document.getElementById("player_health")
 
 
 var EnemyHealth = 100
