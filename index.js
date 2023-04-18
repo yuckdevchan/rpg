@@ -1,5 +1,5 @@
 
-EnemyHealth = document.getElementById("EnemyHealth")
+EnemyHealthText = document.getElementById("EnemyHealth")
 PlayerHpText = document.getElementById("player_health")
 
 
@@ -20,5 +20,5 @@ function EnemyAttack() {
 
 function PlayerAttack() {
   EnemyHealth = EnemyHealth - Attack
-  PlayerHpText.InnerText = EnemyHeath
+  EnemyHealthText.InnerText = EnemyHeath
 }
