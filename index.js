@@ -1,9 +1,24 @@
 att_btn = document.getElementById("attack_btn")
-EnemyHealth = documen.getElementById("EnemyHealth")
-EHealth = 0
-Attack = 10
+EnemyHealth = document.getElementById("EnemyHealth")
+PlayerHpText = document.getElementById("player_health")
 
-function attack() {
+
+EHealth = 100
+EDefence = 5
+EAttack = 5
+
+PlayerAttack = 10
+PlayerHealth = 100
+PlayerDefence = 10
+
+
+
+function EnemyAttack() {
+  PlayerHealth -= EAttack
+  PlayerHpText -= PlayerHealth
+}
+
+function PlayerAttack() {
   EHealth = EnemyHealth - Attack
-  att_btn.InnerText = EnemyHeath
+  playerHealth.InnerText = EnemyHeath
 }
