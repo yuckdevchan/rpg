@@ -1,15 +1,15 @@
 
-EnemyHealthText = document.getElementById("EnemyHealth").innerHTML
-PlayerHpText = document.getElementById("player_health").innerHTML
+var EnemyHealthText = document.getElementById("EnemyHealth").innerHTML
+var PlayerHpText = document.getElementById("player_health").innerHTML
 
 
-EnemyHealth = 100
-EnemyDefence = 5
-EnemyAttack = 5
+var EnemyHealth = 100
+var EnemyDefence = 5
+var EnemyAttack = 5
 
-PlayerAttack = 10
-PlayerHealth = 100
-PlayerDefence = 10
+var PlayerAttack = 10
+var PlayerHealth = 100
+var PlayerDefence = 10
 
 
 
