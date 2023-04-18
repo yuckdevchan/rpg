@@ -20,5 +20,5 @@ function EnemyAttack() {
 
 function PlayerAttack() {
   EHealth = EnemyHealth - Attack
-  playerHealth.InnerText = EnemyHeath
+  playerHpText.InnerText = EnemyHeath
 }
