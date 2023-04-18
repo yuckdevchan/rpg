@@ -1,4 +1,4 @@
-att_btn = document.getElementById("attack_btn")
+
 EnemyHealth = document.getElementById("EnemyHealth")
 PlayerHpText = document.getElementById("player_health")
 
