@@ -1,8 +1,3 @@
-
-let EnemyHealthText = document.getElementById("EnemyHealth")
-let PlayerHpText = document.getElementById("player_health")
-
-
 var EnemyHealth = 100
 var EnemyDefence = 5
 var EnemyAttack = 5
@@ -20,6 +15,10 @@ function EnemyAttackEvent() {
 
 function PlayerAttackEvent() {
   EnemyHealth = EnemyHealth - PlayerAttack
+  console.log(EnemyHealth)
   toString(EnemyHealth)
   EnemyHealthText = EnemyHealth
+  document.getElementById("EnemyHealth").innerHTML = EnemyHealthText
+  var metal_pipe = new Audio('pipe.mp3');
+  metal_pipe.play();
 }
