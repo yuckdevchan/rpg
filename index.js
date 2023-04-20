@@ -6,15 +6,18 @@ var PlayerAttack = 10
 var PlayerHealth = 100
 var PlayerDefence = 10
 
+
+var playerDefenceModifier = PlayerDefence / 2
+var enemyDefenceModifier = EnemyDefence / 2
 var metal_pipe = new Audio('pipe.mp3');
 
 function EnemyAttackEvent() {
-  PlayerHealth -= EnemyAttack
+  PlayerHealth = PlayerHealth - EnemyAttack + playerDefenceModifier
   PlayerHpText -= PlayerHealth
 }
 
 function PlayerAttackEvent() {
-  EnemyHealth = EnemyHealth - PlayerAttack
+  EnemyHealth = EnemyHealth - PlayerAttack + enemyDefenceModifier
   console.log(EnemyHealth)
   toString(EnemyHealth)
   EnemyHealthText = EnemyHealth
