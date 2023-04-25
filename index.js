@@ -21,6 +21,9 @@ function PlayerAttackEvent() {
   console.log(EnemyHealth)
   toString(EnemyHealth)
   EnemyHealthText = EnemyHealth
-  document.getElementById("EnemyHealth").innerHTML = EnemyHealthText
+  if EnemyHealth <= 0:
+    document.getElementById("EnemyHealth").innerHTML = "Your are dead"
+  else:
+    document.getElementById("EnemyHealth").innerHTML = EnemyHealthText
   metal_pipe.play();
 }
